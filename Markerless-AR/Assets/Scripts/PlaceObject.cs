@@ -14,6 +14,8 @@ public class PlaceObject : MonoBehaviour
     private ARRaycastManager aRRaycastManager;
     private ARPlaneManager aRPlaneManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+
     
     private void Awake()
     {
@@ -41,6 +43,7 @@ public class PlaceObject : MonoBehaviour
 
         if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon))
         {
+            
             foreach (ARRaycastHit hit in hits)
             {
                 Pose pose = hit.pose;

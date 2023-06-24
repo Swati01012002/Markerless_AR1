@@ -21,5 +21,25 @@ public class Events : MonoBehaviour
     {
         SceneManager.LoadScene("Scene3");
     }
+    public void Scene4()
+    {
+        SceneManager.LoadScene("Scene4");
+    }
+    public void Scene5()
+    {
+        SceneManager.LoadScene("Scene5");
+    }
+    public void Scene6()
+    {
+        SceneManager.LoadScene("Scene6");
+    }
+    public void Scene7()
+    {
+        SceneManager.LoadScene("Scene7");
+    }
+    public void Scene8()
+    {
+        SceneManager.LoadScene("Scene8");
+    }
 
 }
