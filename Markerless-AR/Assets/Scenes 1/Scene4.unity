@@ -1137,11 +1137,11 @@ RectTransform:
   m_Father: {fileID: 100279286}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -566}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 1333}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &873925583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,6 +2123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930986431}
   - component: {fileID: 1930986432}
+  - component: {fileID: 1930986433}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -2152,13 +2153,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930986430}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62516a1e60a57e8478b90cf92266725d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   arObjectToSpawn: {fileID: 721045016804959642, guid: e44e3122cb7192042b96792e967c285b,
     type: 3}
+  placementIndicator: {fileID: 898593270}
+--- !u!114 &1930986433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930986430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e847d35c7686f44a26a1d872bbbd66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arObjectsToSpawn:
+  - {fileID: 5089573831305844038, guid: 6015f705b51ca814683b83a069df4575, type: 3}
+  - {fileID: 721045016804959642, guid: e44e3122cb7192042b96792e967c285b, type: 3}
+  - {fileID: 7625261572977751305, guid: 1189904b73d88054fa88fa5c364c51f3, type: 3}
   placementIndicator: {fileID: 898593270}
 --- !u!1 &2117227563
 GameObject:
